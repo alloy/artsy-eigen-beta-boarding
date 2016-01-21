@@ -26,11 +26,11 @@
 
     <%= form_tag("submit", method: "post", style: "text-align: left") do %>
       <%= label_tag(:first_name, t(:first_name_label)) %>
-      <%= text_field_tag :first_name, '', class: "form-control", placeholder: t(:first_name_placeholder) %><br />
+      <%= text_field_tag :first_name, user_info[:name].split(' ')[0..-2].join(" "), class: "form-control", placeholder: t(:first_name_placeholder) %><br />
       <%= label_tag(:last_name, t(:last_name_label)) %>
-      <%= text_field_tag :last_name, '', class: "form-control", placeholder: t(:last_name_placeholder) %><br />
+      <%= text_field_tag :last_name, user_info[:name].split(' ').last, class: "form-control", placeholder: t(:last_name_placeholder) %><br />
       <%= label_tag(:email, t(:email_label), class: "required") %>
-      <%= email_field_tag :email, '', class: "form-control", placeholder: t(:email_placeholder) %><br />
+      <%= email_field_tag :email, user_info[:email], class: "form-control", placeholder: t(:email_placeholder) %><br />
 
       <% if ENV["ITC_TOKEN"] %>
         <% if params[:token] %>

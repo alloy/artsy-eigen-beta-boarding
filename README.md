@@ -97,6 +97,10 @@ To secure your webpage, you only have to set the `ITC_TOKEN` environment variabl
 
 **Required:**
 
+- `ARTSY_CLIENT_ID` Artsy ‘app’ ID
+- `ARTSY_CLIENT_SECRET` Artsy ‘app’ secret
+- `ARTSY_API_URL` https://api.artsy.net/
+- `RESTRICTED_DOMAIN` @artsymail.com
 - `ITC_USER` iTunes Connect username
 - `ITC_PASSWORD` iTunes Connect password
 - `ITC_APP_ID` The Apple ID or Bundle Identifier of your app

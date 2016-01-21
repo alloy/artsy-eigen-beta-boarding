@@ -1,6 +1,9 @@
 source 'https://rubygems.org'
 
-# ruby '2.2.3'
+ruby '2.3.0'
+
+gem 'omniauth-oauth2'
+gem 'omniauth-artsy', git: 'https://github.com/artsy/omniauth-artsy.git'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
